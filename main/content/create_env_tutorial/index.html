@@ -464,9 +464,9 @@
 <a class="reference internal image-reference" href="../../_images/second_step.png"><img alt="env after second step" src="../../_images/second_step.png" style="width: 200px;" /></a>
 </figure>
 </section>
-<section id="create-seperating-walls">
-<h3>Create Seperating Walls<a class="headerlink" href="#create-seperating-walls" title="Permalink to this heading">#</a></h3>
-<p>To create a wall that seperates the environment into two rooms, we use the command</p>
+<section id="create-separating-walls">
+<h3>Create Separating Walls<a class="headerlink" href="#create-separating-walls" title="Permalink to this heading">#</a></h3>
+<p>To create a wall that separates the environment into two rooms, we use the command</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">Wall</span><span class="p">())</span>
 </pre></div>
@@ -545,7 +545,7 @@
         <span class="c1"># Generate the surrounding walls</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="o">.</span><span class="n">wall_rect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
 
-        <span class="c1"># Generate verical seperation wall</span>
+        <span class="c1"># Generate verical separation wall</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">grid</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">Wall</span><span class="p">())</span>
         
@@ -626,7 +626,7 @@
 <li><a class="reference internal" href="#generate-the-grid-world">Generate the grid-world</a><ul>
 <li><a class="reference internal" href="#create-world">Create World</a></li>
 <li><a class="reference internal" href="#place-goal">Place Goal</a></li>
-<li><a class="reference internal" href="#create-seperating-walls">Create Seperating Walls</a></li>
+<li><a class="reference internal" href="#create-separating-walls">Create Separating Walls</a></li>
 <li><a class="reference internal" href="#add-keys-and-doors">Add Keys and Doors</a></li>
 </ul>
 </li>
