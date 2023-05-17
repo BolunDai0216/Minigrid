@@ -226,12 +226,20 @@ class Grid:
 
                 agent_here = np.array_equal(agent_pos, (i, j))
                 assert highlight_mask is not None
-                tile_img = Grid.render_tile(
-                    cell,
-                    agent_dir=agent_dir if agent_here else None,
-                    highlight=highlight_mask[i, j],
-                    tile_size=tile_size,
-                )
+                if highlight_mask[i, j]:
+                    tile_img = Grid.render_tile(
+                        cell,
+                        agent_dir=agent_dir if agent_here else None,
+                        highlight=highlight_mask[i, j],
+                        tile_size=tile_size,
+                    )
+                else:
+                    tile_img = Grid.render_tile(
+                        None,
+                        agent_dir=agent_dir if agent_here else None,
+                        highlight=highlight_mask[i, j],
+                        tile_size=tile_size,
+                    )
 
                 ymin = j * tile_size
                 ymax = (j + 1) * tile_size

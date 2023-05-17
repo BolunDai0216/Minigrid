@@ -12,14 +12,11 @@ from minigrid.wrappers import ImgObsWrapper, RGBImgPartialObsWrapper
 
 
 class ManualControl:
-    def __init__(
-        self,
-        env: Env,
-        seed=None,
-    ) -> None:
+    def __init__(self, env: Env, seed=None, key_map=["1", "2", "3", "4"]) -> None:
         self.env = env
         self.seed = seed
         self.closed = False
+        self.key_map = key_map
 
     def start(self):
         """Start the window display with blocking event loop"""
@@ -63,11 +60,11 @@ class ManualControl:
             return
 
         key_to_action = {
-            "left": Actions.left,
-            "right": Actions.right,
-            "up": Actions.forward,
-            "space": Actions.toggle,
-            "pageup": Actions.pickup,
+            self.key_map[0]: Actions.left,
+            self.key_map[1]: Actions.right,
+            self.key_map[2]: Actions.forward,
+            self.key_map[3]: Actions.toggle,
+            self.key_map[4]: Actions.pickup,
             "pagedown": Actions.drop,
             "tab": Actions.pickup,
             "left shift": Actions.drop,
