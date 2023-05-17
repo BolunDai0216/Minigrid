@@ -12,7 +12,7 @@ from minigrid.wrappers import ImgObsWrapper, RGBImgPartialObsWrapper
 
 
 class ManualControl:
-    def __init__(self, env: Env, seed=None, key_map=["1", "2", "3", "4"]) -> None:
+    def __init__(self, env: Env, seed=None, key_map=["1", "2", "3", "4", "5"]) -> None:
         self.env = env
         self.seed = seed
         self.closed = False
@@ -59,12 +59,14 @@ class ManualControl:
             self.reset()
             return
 
+        breakpoint()
+
         key_to_action = {
-            self.key_map[0]: Actions.left,
-            self.key_map[1]: Actions.right,
-            self.key_map[2]: Actions.forward,
-            self.key_map[3]: Actions.toggle,
-            self.key_map[4]: Actions.pickup,
+            "left": Actions.left,
+            "right": Actions.right,
+            "up": Actions.forward,
+            "space": Actions.toggle,
+            "pageup": Actions.pickup,
             "pagedown": Actions.drop,
             "tab": Actions.pickup,
             "left shift": Actions.drop,
