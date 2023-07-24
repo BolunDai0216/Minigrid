@@ -217,9 +217,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../publications/">List of Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../create_env_tutorial/">Tutorial on Creating Environments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../training/">Training Minigrid Environments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../training/#create-custom-feature-extractor">Create Custom Feature Extractor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../training/#train-a-ppo-agent">Train a PPO Agent</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../training/#further-reading">Further Reading</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Wrappers</span></p>
 <ul>
@@ -384,13 +381,7 @@
 </section>
 <section id="training-an-agent">
 <h1>Training an Agent<a class="headerlink" href="#training-an-agent" title="Permalink to this heading">#</a></h1>
-<p>If you want to train an agent with reinforcement learning, I recommend using the code found in the <a class="reference external" href="https://github.com/lcswillems/torch-rl">torch-rl</a> repository.
-This code has been tested and is known to work with this environment. The default hyper-parameters are also known to converge.</p>
-<p>A sample training command is:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">torch</span><span class="o">-</span><span class="n">rl</span>
-<span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">scripts</span><span class="o">.</span><span class="n">train</span> <span class="o">--</span><span class="n">env</span> <span class="n">MiniGrid</span><span class="o">-</span><span class="n">Empty</span><span class="o">-</span><span class="mi">8</span><span class="n">x8</span><span class="o">-</span><span class="n">v0</span> <span class="o">--</span><span class="n">algo</span> <span class="n">ppo</span>
-</pre></div>
-</div>
+<p>If you want to train an agent with reinforcement learning, please refer to the <a class="reference internal" href="../training/"><span class="std std-doc">training tutorial</span></a>.</p>
 </section>
 
           </article>
