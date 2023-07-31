@@ -213,7 +213,7 @@
   <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Basic Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#training-an-agent">Training an Agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../publications/">List of Publications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../create_env_tutorial/">Tutorial on Creating Environments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../training/">Training Minigrid Environments</a></li>
@@ -371,17 +371,26 @@
             <section id="basic-usage">
 <h1>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this heading">#</a></h1>
 <p>There is a UI application which allows you to manually control the agent with the arrow keys:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">minigrid</span><span class="o">/</span><span class="n">manual_control</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./minigrid/manual_control.py
 </pre></div>
 </div>
 <p>The environment being run can be selected with the <code class="docutils literal notranslate"><span class="pre">--env</span></code> option, eg:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">minigrid</span><span class="o">/</span><span class="n">manual_control</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">env</span> <span class="n">MiniGrid</span><span class="o">-</span><span class="n">Empty</span><span class="o">-</span><span class="mi">8</span><span class="n">x8</span><span class="o">-</span><span class="n">v0</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./minigrid/manual_control.py<span class="w"> </span>--env<span class="w"> </span>MiniGrid-Empty-8x8-v0
 </pre></div>
 </div>
 </section>
-<section id="training-an-agent">
-<h1>Training an Agent<a class="headerlink" href="#training-an-agent" title="Permalink to this heading">#</a></h1>
-<p>If you want to train an agent with reinforcement learning, please refer to the <a class="reference internal" href="../training/"><span class="std std-doc">training tutorial</span></a>.</p>
+<section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h1>
+<p>Minigrid call be installed via <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>minigrid
+</pre></div>
+</div>
+<p>To modify the codebase or contribute to Minigrid, you would need to install Minigrid from source:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Farama-Foundation/Minigrid.git
+<span class="nb">cd</span><span class="w"> </span>Minigrid
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</pre></div>
+</div>
 </section>
 
           </article>
