@@ -1,9 +1,10 @@
 [![PyPI version](https://badge.fury.io/py/minigrid.svg)](https://badge.fury.io/py/minigrid)
+[![Tests](https://github.com/Farama-Foundation/Minigrid/actions/workflows/tests.yml/badge.svg)](https://github.com/Farama-Foundation/Minigrid/actions/workflows/tests.yml)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 <p align="center">
-    <a href = "https://minigrid.farama.org/" target = "_blank" > <img src="https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/minigrid-text.png" width="500px"/> </a>
+    <a href = "https://minigrid.farama.org/" target = "_blank" > <img src="https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/minigrid-text.png" width="500px"/> </a>
 </p>
 
 <p align="center">
