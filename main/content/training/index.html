@@ -440,10 +440,10 @@
     <span class="n">features_extractor_kwargs</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">features_dim</span><span class="o">=</span><span class="mi">128</span><span class="p">),</span>
 <span class="p">)</span>
 
-<span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">&quot;MiniGrid-Empty-16x16-v0&quot;</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="s2">&quot;rgb_array&quot;</span><span class="p">)</span>
+<span class="n">env</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s2">"MiniGrid-Empty-16x16-v0"</span><span class="p">,</span> <span class="n">render_mode</span><span class="o">=</span><span class="s2">"rgb_array"</span><span class="p">)</span>
 <span class="n">env</span> <span class="o">=</span> <span class="n">ImgObsWrapper</span><span class="p">(</span><span class="n">env</span><span class="p">)</span>
 
-<span class="n">model</span> <span class="o">=</span> <span class="n">PPO</span><span class="p">(</span><span class="s2">&quot;CnnPolicy&quot;</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">policy_kwargs</span><span class="o">=</span><span class="n">policy_kwargs</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">PPO</span><span class="p">(</span><span class="s2">"CnnPolicy"</span><span class="p">,</span> <span class="n">env</span><span class="p">,</span> <span class="n">policy_kwargs</span><span class="o">=</span><span class="n">policy_kwargs</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="mf">2e5</span><span class="p">)</span>
 </pre></div>
 </div>
